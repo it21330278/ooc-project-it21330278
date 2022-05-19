@@ -16,6 +16,7 @@ public :
 };
 #include <cstring>
 
+guestUser::guestUser(){}
 guestUser::guestUser(int pUserID,char pUserName[],int pUSERContact_No)
 {
 	UserID = pUserID;
