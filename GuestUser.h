@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstring>
 
 class guestUser{
 protected:
@@ -14,7 +15,7 @@ public :
   virtual void displayDetails();
 	~guestUser();	
 };
-#include <cstring>
+
 
 guestUser::guestUser(){}
 guestUser::guestUser(int pUserID,char pUserName[],int pUSERContact_No)
