@@ -1,0 +1,80 @@
+// librarian.h
+
+
+#include <iostream>
+
+class librarian {
+private:
+	int librarian_id;
+	char librarian_name[20];
+	int contact_no;
+public:
+	librarian();
+	librarian(int plibrarian_id,char plibrarian_name[],int pcontact_no);
+	void login();
+	void addBook();
+	void removeBook();
+	void restockBook();
+	void analysesOrder_id();
+	void assignClerk();
+	void logout();
+  ~librarian();
+};
+
+//librarian.cpp file
+
+
+#include <cstring>
+
+
+librarian::librarian(int plibrarian_id,char plibrarian_name[],int pcontact_no)
+{
+  librarian_id=plibrarian_id;
+  strcpy(librarian_name,plibrarian_name);
+  contact_no=pcontact_no;
+}
+void librarian:: login(){}
+void librarian:: addBook(){}
+void librarian:: removeBook(){}
+void librarian:: restockBook(){}
+void librarian:: analysesOrder_id(){}
+void librarian:: assignClerk(){}
+void librarian:: logout(){}
+librarian :: ~librarian(){}
+
+
+// Book.h
+
+
+#include <iostream>
+
+class Books {
+private:
+  int book_id;
+  char book_name[20];
+  float price;
+public:
+  Books();
+  Books(int pbook_id, char pbook_name[], float pprice);
+  void addbooks();
+  void removebooks();
+  void restock();
+}; 
+
+
+//Book.cpp file
+
+
+#include <cstring>
+
+Books::Books(int pbook_id, char pbook_name[], float pprice)
+{
+  book_id = pbook_id;
+  strcpy(book_name, pbook_name);
+  price = pprice; 
+}
+void addBooks(){}
+void romoveBooks(){}
+void restock(){}
+
+
