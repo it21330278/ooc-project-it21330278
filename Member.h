@@ -1,8 +1,6 @@
 //it21330278
 #include "GuestUser.h"
 #include <iostream>
-#include <cstring>
-
 
 class Member : public guestUser{
 private:
@@ -19,6 +17,9 @@ public :
   void Logout ();
 	~Member();	
 };
+
+#include <cstring>
+
 void Member::RegisterUser(int MembID,char MembName[])
 {
   MemID = MembID;
