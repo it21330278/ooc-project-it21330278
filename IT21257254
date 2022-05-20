@@ -1,0 +1,55 @@
+//payment.h
+#include <cstring>
+#include <iostream>
+using namespace std;
+
+class Payment
+{
+private:
+  int payID;
+  char payType[20];
+  double payAmount;
+public:
+  Payment();
+  Payment(int pID,const char ppayType[],double ppayAmount);
+  void checkPayment();
+  void confirmPayment();
+  void loadPaymentinfo();
+  ~Payment();
+};
+Payment::Payment(){}
+Payment::Payment(int pID,const char ppayType[],double ppayAmount)
+{
+  pID = payID;
+  strcpy( payType ,ppayType);
+  ppayAmount = payAmount;
+}
+void Payment:: checkPayment(){}
+void Payment:: confirmPayment(){}
+void Payment:: loadPaymentinfo(){}
+
+
+
+//Reports.h
+#include <cstring>
+#include <iostream>
+using namespace std;
+
+class Reports
+{
+private:
+  int reportNo;
+public:
+  Reports();
+  Reports(int rNo);
+  void genarateFinancialReport();
+  void displayFinancialReport();
+  ~Reports();
+};
+Reports::Reports(){}
+Reports::Reports(int rNo)
+{
+  rNo = reportNo;  
+}
+void Reports::genarateFinancialReport(){}
+void Reports:: displayFinancialReport(){} 
